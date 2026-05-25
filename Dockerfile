@@ -33,7 +33,7 @@ ENV RUN_SCRIPTS 1
 ENV REAL_IP_HEADER 1
 
 # Ensure storage and bootstrap folders are writeable
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chown -R nginx:nginx /var/www/html/storage /var/www/html/bootstrap/cache
 
 # Disable automatic composer install on startup since we already did it
 ENV SKIP_COMPOSER 1
